@@ -1,0 +1,9 @@
+# Compulsory line, this is a version 4 file
+version=4
+
+# GitHub hosted projects
+
+# https://github.com/bialix/intelhex
+opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/intelhex-$1\.tar\.gz/ \
+  https://github.com/bialix/intelhex/tags .*/v?(\d\S+)\.tar\.gz
+

@@ -1,4 +1,15 @@
 #!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+export PYBUILD_NAME=intelhex
 
 %:
-	dh $@
+	dh $@ --buildsystem=pybuild
+
+execute_after_dh_auto_install:
+	mkdir -p debian/python3-intelhex/usr/share/python3-intelhex
+	mv debian/python3-intelhex/usr/bin/* debian/python3-intelhex/usr/share/python3-intelhex/
+
+override_dh_auto_test:
