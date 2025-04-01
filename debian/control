@@ -1,15 +1,28 @@
-Source: template-repository
-Section: unknown
+Source: intelhex
+Section: python
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Jakob Haufe <sur5r@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ python3,
+ python3-setuptools,
+Standards-Version: 4.6.2
+Homepage: https://github.com/bialix/intelhex
+X-Python3-Version: >= 3.6
+Vcs-Git: https://salsa.debian.org/python-team/packages/intelhex.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/intelhex
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: python3-intelhex
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Python support for Intel HEX (Python3)
+ The Intel HEX file format is widely used in the microprocessors
+ and microcontrollers area as the de facto standard for code
+ representation for microelectronic devices programming.
+ .
+ This package implements an intelhex Python library to read, write,
+ create from scratch and manipulate data from HEX (also known as
+ Intel HEX) file format.

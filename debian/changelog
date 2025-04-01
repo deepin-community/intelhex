@@ -1,5 +1,68 @@
-template-repository (1.0-1) unstable; urgency=medium
+intelhex (2.3.0-3) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository-Browse.
+  * Update standards version to 4.6.2, no changes needed.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Jakob Haufe ]
+  * Adopt package (Closes: #976074)
+
+ -- Jakob Haufe <sur5r@debian.org>  Fri, 22 Mar 2024 20:48:07 +0100
+
+intelhex (2.3.0-2) unstable; urgency=medium
+
+  * QA upload.
+
+  [ Debian Janitor ]
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 25 May 2022 13:41:40 +0100
+
+intelhex (2.3.0-1) unstable; urgency=medium
+
+  * QA upload.
+  * New upstream version 2.3.0
+  * Set package maintainer to Debian QA Group.
+  * debian/gbp.conf: Dropped, use default settings.
+  * debian/patches: Dropped, merged upstream.
+  * debian/copyright: Update information.
+  * Refresh packaging:
+    + Use Vcs-* URLs under Debian Python Team.
+    + Bump Standards-Version to 4.6.0.
+    + BUmp debhelper compat to v13.
+  * debian/rules: Use dh13 syntax.
+  * debian/docs: Install upstream documentation.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 13 Oct 2021 13:59:29 -0400
+
+intelhex (2.1-2.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Source only upload to allow migration to testing.
+
+ -- Antonio Terceiro <terceiro@debian.org>  Tue, 08 Dec 2020 12:22:23 -0300
+
+intelhex (2.1-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fixing Python 3.9 blocking issue (Closes: #975805) while waiting for
+    new update.
+    No need to upstream the patch has the fix has been made in newer
+    versions.
+
+ -- Philippe Thierry <philou@debian.org>  Sat, 28 Nov 2020 15:50:13 +0100
+
+intelhex (2.1-2) unstable; urgency=medium
+
+  * Complete debian/copyright (Closes: #910658)
+
+ -- Neil Williams <codehelp@debian.org>  Tue, 09 Oct 2018 15:28:03 +0100
+
+intelhex (2.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #910565: ITP: intelhex -- Intel HEX
+    microcontroller format support for Python)
+
+ -- Neil Williams <codehelp@debian.org>  Fri, 05 Oct 2018 14:33:09 +0100
